@@ -123,6 +123,7 @@ func (server *Server) readRequest(cc codec.Codec) (*request, error) {
 	if err != nil {
 		return nil, err
 	}
+
 	req := &request{h: h}
 	// TODO: now we don't know the type of request argv
 	// day 1, just suppose it's string
